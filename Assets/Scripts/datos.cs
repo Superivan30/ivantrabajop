@@ -10,6 +10,10 @@ public class DataJSON : System.Object
     [SerializeField]
     public string nombre_juego;
     [SerializeField]
+    public string edad;
+    [SerializeField]
+    public string ciudad;
+    [SerializeField]
     public string nombre_jugador;
     [SerializeField]
     public int nivel;

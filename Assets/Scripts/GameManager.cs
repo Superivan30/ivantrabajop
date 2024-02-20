@@ -7,9 +7,12 @@ using System.IO;
 public class GameManager : MonoBehaviour
 {
     public DataJSON misDatos;
+    public Text edad;
     public Text textoTitulo;
     public Text textoPlayer;
+    public Text ciudad;
     public InputField textoJugador;
+    public InputField textociudad;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,9 +42,12 @@ public class GameManager : MonoBehaviour
         GameObject.Find("t_titulo").GetComponent<Text>().text = misDatos.nombre_juego;
         textoTitulo.text = misDatos.nombre_juego;
         textoPlayer.text = misDatos.nombre_jugador;
+        ciudad.text = "ciudad: " + misDatos.ciudad;
+        edad.text = "edad: " + misDatos.edad;
     }
     public void guardaDatos(){
         misDatos.nombre_jugador = textoJugador.text;
+        misDatos.ciudad = textociudad.text;
         string filePat = Application.streamingAssetsPath + "/" + "data1.json";
         string s = JsonUtility.ToJson(misDatos, true);
         File.WriteAllText(filePat, s);

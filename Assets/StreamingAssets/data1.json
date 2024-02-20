@@ -1,6 +1,8 @@
 {
     "nombre_juego": "c.u.m zone",
-    "nombre_jugador": "tumama",
+    "edad": "5",
+    "ciudad": "hogar",
+    "nombre_jugador": "papa",
     "nivel": 1,
     "salud": 100,
     "correo": "",
