@@ -17,6 +17,10 @@ public class DataJSON : System.Object
     public int salud;
     [SerializeField]
     public string correo;
+    [SerializeField]
+    public Vector3 playerLocation;
+
+    
 
     public DataJSON()
     {
